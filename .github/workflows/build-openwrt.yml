@@ -84,8 +84,8 @@ jobs:
         chmod +x $DIY_SH
         cd openwrt
         ../$DIY_SH
-    - name: SSH connection to Actions
-      uses: P3TERX/ssh2actions@main
+#    - name: SSH connection to Actions
+#      uses: P3TERX/ssh2actions@main
       if: env.SSH_ACTIONS == 'true'
 
     - name: Download package
